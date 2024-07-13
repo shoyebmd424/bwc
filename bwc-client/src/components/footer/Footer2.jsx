@@ -1,18 +1,21 @@
 import { Link } from "react-router-dom";
 import FooterHeader2 from "./FooterHeader2";
 import FooterSelect1 from "./FooterSelect1";
-import { about, category, support } from "@/data/footer";
+import { about, category, support, other } from "@/data/footer";
 
 export default function Footer2() {
   return (
     <>
-      <section className="footer-style1 at-home7 pt25 pb-0">
+      <section
+        className="footer-style1 at-home7 pt25 pb-0"
+        style={{ background: "#1F4B3F", color: "white" }}
+      >
         <div className="container">
           <FooterHeader2 />
           <div className="row">
             <div className="col-sm-6 col-lg-3">
               <div className="link-style1 light-style at-home8 mb-4 mb-sm-5">
-                <h5 className="mb15">About</h5>
+                <h5 className="mb15">Building Work</h5>
                 <div className="link-list">
                   {about.map((item, i) => (
                     <Link key={i} to={item.path}>
@@ -24,7 +27,7 @@ export default function Footer2() {
             </div>
             <div className="col-sm-6 col-lg-3">
               <div className="link-style1 light-style at-home8 mb-4 mb-sm-5">
-                <h5 className="mb15">Categories</h5>
+                <h5 className="mb15">Professional Services</h5>
                 <ul className="ps-0">
                   {category.map((item, i) => (
                     <li key={i}>
@@ -34,11 +37,21 @@ export default function Footer2() {
                 </ul>
               </div>
             </div>
-            <div className="col-sm-6 col-lg-3">
-              <div className="link-style1 light-style at-home8 mb-4 mb-sm-5">
-                <h5 className="mb15">Support</h5>
+            <div className="col-sm-6 col-lg-3 row">
+              <div className="link-style1 col-6 light-style at-home8 mb-4 mb-sm-5">
+                <h5 className="mb15">Legal & Support</h5>
                 <ul className="ps-0">
                   {support.map((item, i) => (
+                    <li key={i}>
+                      <Link to={item.path}>{item.name}</Link>
+                    </li>
+                  ))}
+                </ul>
+              </div>
+              <div className="link-style1 col-6 light-style at-home8 mb-4 mb-sm-5">
+                <h5 className="mb15">Other</h5>
+                <ul className="ps-0">
+                  {other.map((item, i) => (
                     <li key={i}>
                       <Link to={item.path}>{item.name}</Link>
                     </li>
@@ -91,6 +104,7 @@ export default function Footer2() {
                   <a
                     href="https://themeforest.net/user/ib-themes/portfolio"
                     target="_blank"
+                    rel="noreferrer"
                   >
                     ib-themes
                   </a>

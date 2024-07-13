@@ -139,7 +139,7 @@ function App() {
               <Footer20 />
             ) : (
               pathname !== "/service-7" &&
-              pathname !== "/invoices" && <Footer />
+              pathname !== "/invoices" && <Footer2 />
             )}
 
             {/* bottom to top */}

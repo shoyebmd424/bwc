@@ -105,6 +105,24 @@ export default function RoutesComponent() {
       <Routes>
         <Route path="/">
           <Route index element={<HomePage1 />} />
+          <Route path="/blog" element={<BlogPage2 />} />
+          <Route path="/blog/single" element={<BlogSinglePage1 />} />
+          <Route path="/tradespeople" element={<FreelancerPage1 />} />
+          <Route
+            path="/tradespeople/tradeperson"
+            element={<FreelancerPageSingle1 />}
+          />
+          <Route path="/service" element={<ServicePage3 />} />
+          <Route path="service/single" element={<ServicePageSingle11 />} />
+          <Route path="home-inspiration" element={<ServicePage4 />} />
+          <Route
+            path="home-inspiration/single"
+            element={<ServicePageSingle2 />}
+          />
+          <Route path="help-support" element={<HelpPage />} />
+          <Route path="faq" element={<FaqPage />} />
+          <Route path="terms" element={<TermsPage />} />
+
           <Route path="home-1" element={<HomePage1 />} />
           <Route path="home-2" element={<HomePage2 />} />
           <Route path="home-3" element={<HomePage3 />} />
@@ -186,7 +204,7 @@ export default function RoutesComponent() {
           <Route path="employee-2" element={<EmploeePage2 />} />
           <Route path="employee-single" element={<EmploeePageSingle1 />} />
           <Route path="employee-single/:id" element={<EmploeePageSingle11 />} />
-          <Route path="freelancer-1" element={<FreelancerPage1 />} />
+          <Route path="freelancer-1" element={<FreelancerPageSingle1 />} />
           <Route path="freelancer-2" element={<FreelancerPage2 />} />
           <Route path="freelancer-3" element={<FreelancerPage3 />} />
           <Route path="freelancer-single" element={<FreelancerPageSingle1 />} />

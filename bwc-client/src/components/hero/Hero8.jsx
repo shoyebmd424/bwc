@@ -1,7 +1,7 @@
 import HeroSearch1 from "../element/HeroSearch1";
 import { useState } from "react";
 import { useNavigate } from "react-router-dom";
-
+import img from "../../asserts/home/images.png";
 const role = ["City, state, or zip", "Miami", "New York"];
 
 const popular = ["Designer", "Developer", "Web", "IOS", "PHP", "Senior"];
@@ -25,7 +25,8 @@ export default function Hero8() {
       <section className="hero-home8 p-0 space-maintain-1">
         <div className="home8-hero-img d-none d-xl-block">
           <img
-            src="/images/about/home8-hero-1.jpg"
+            // src="/images/about/home8-hero-1.jpg"
+            src={img}
             alt="home-8"
             className="animate-up-1 h-auto"
           />
@@ -34,12 +35,11 @@ export default function Hero8() {
           <div className="row">
             <div className="col-xl-7">
               <h1 className="animate-up-1 text-white">
-                Freelance Services For <br className="d-none d-lg-block" />
-                Your Business
+                Build & Maintain <br className="d-none d-lg-block" />
+                With Confidence
               </h1>
               <p className="animate-up-2 text-white ff-heading mb30">
-                Millions of people use freeio.com to turn their ideas into
-                reality.
+                Millions of people use BWC to turn their ideas into reality.
               </p>
               <div className="advance-search-tab bgc-white bdrs4 p10 position-relative zi1 animate-up-3">
                 <div className="row">

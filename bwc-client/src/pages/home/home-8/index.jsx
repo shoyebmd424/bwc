@@ -11,6 +11,13 @@ import OurPartner1 from "@/components/section/OurPartner1";
 import TrendingService2 from "@/components/section/TrendingService2";
 
 import MetaComponent from "@/components/common/MetaComponent";
+// import NeedSomething3 from "@/components/section/NeedSomething3";
+// import BrowserCategory2 from "@/components/section/BrowserCategory2";
+// import TrendingService5 from "@/components/section/TrendingService5";
+// import HighestRated3 from "@/components/section/HighestRated3";
+// import OurCta5 from "@/components/section/OurCta5";
+// import OurFunFact4 from "@/components/section/OurFunFact4";
+// import OurCta2 from "@/components/section/OurCta2";
 const metadata = {
   title: "Freeio - Freelance Marketplace ReactJs Template | Home 8",
 };
@@ -21,6 +28,7 @@ export default function HomePage8() {
       <MetaComponent meta={metadata} />
       <Hero8 />
       <BrowserCategory1 />
+
       <About4 />
       <TrendingService2 />
       <CtaBanner7 />
