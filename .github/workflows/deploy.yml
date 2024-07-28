@@ -23,15 +23,18 @@ jobs:
           cd bwc-client
           npm install
 
+      - name: Verify dependencies
+        run: |
+          cd bwc-client
+          npm list
+
       - name: Build project
         run: |
           cd bwc-client
-          npm run build
+          npm run build --verbose
 
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v3
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           publish_dir: ./bwc-client/dist
-          user_name: github-actions
-          user_email: github-actions@github.com
