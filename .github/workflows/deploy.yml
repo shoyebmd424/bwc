@@ -36,7 +36,7 @@ jobs:
       - name: Deploy to GitHub Pages
         run: |
           cd bwc-client
-          git remote set-url origin https://x-access-token:${{ secrets.GITHUB_TOKEN }}@github.com/bwc.git
+          git remote set-url origin https://x-access-token:${{ secrets.GITHUB_TOKEN }}@github.com/shoyebmd424/bwc.git
           npm run deploy
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
