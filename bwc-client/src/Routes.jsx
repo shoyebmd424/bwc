@@ -108,38 +108,41 @@ export default function RoutesComponent() {
           <Route path="/bwc/login" element={<LoginPage />} />
           <Route path="/bwc/register" element={<RegisterPage />} />
           <Route path="/bwc/ui-component" element={<UIElementsPage />} />
+          <Route path="/bwc/consumer" element={<DashboardLayout />}>
+            <Route path="" element={<ConsumerDashboard />} />
+            <Route path="schedule" element={<Schedule />} />
+            <Route path="post-a-job" element={<Job />} />
+            <Route path="job" element={<Job />} />
+            <Route path="job/:id" element={<SingleJob />} />
+            <Route path="tradepersons" element={<Tradeperson />} />
+            <Route
+              path="tradepersons/:id"
+              element={<FreelancerPageSingle1 />}
+            />
+
+            <Route path="my-profile" element={<DasbPageMyProfile />} />
+          </Route>
+
+          {/* tarderperson */}
+          <Route path="/bwc/tradeperson" element={<Tradepersonlayout />}>
+            <Route path="" element={<TradeDash />} />
+            <Route path="schedule" element={<TradeSchedule />} />
+            <Route path="requests" element={<JobRequests />} />
+            <Route path="job" element={<JobRequests />} />
+            <Route path="quetation" element={<JobRequests />} />
+            <Route path="requests/quetation" element={<Quetation />} />
+            <Route path="requests/quetation/preview" element={<Preview />} />
+            <Route path="invoice" element={<TradeInvoice />} />
+            <Route path="payout" element={<Payout />} />
+            <Route path="my-profile" element={<Profile />} />
+            <Route path="services" element={<ManageServices />} />
+          </Route>
         </Route>
         {/* end mine */}
 
         {/* consumer */}
         {/* consumers routes */}
 
-        <Route path="/bwc/consumer" element={<DashboardLayout />}>
-          <Route path="" element={<ConsumerDashboard />} />
-          <Route path="schedule" element={<Schedule />} />
-          <Route path="post-a-job" element={<Job />} />
-          <Route path="job" element={<Job />} />
-          <Route path="job/:id" element={<SingleJob />} />
-          <Route path="tradepersons" element={<Tradeperson />} />
-          <Route path="tradepersons/:id" element={<FreelancerPageSingle1 />} />
-
-          <Route path="my-profile" element={<DasbPageMyProfile />} />
-        </Route>
-
-        {/* tarderperson */}
-        <Route path="/bwc/tradeperson" element={<Tradepersonlayout />}>
-          <Route path="" element={<TradeDash />} />
-          <Route path="schedule" element={<TradeSchedule />} />
-          <Route path="requests" element={<JobRequests />} />
-          <Route path="job" element={<JobRequests />} />
-          <Route path="quetation" element={<JobRequests />} />
-          <Route path="requests/quetation" element={<Quetation />} />
-          <Route path="requests/quetation/preview" element={<Preview />} />
-          <Route path="invoice" element={<TradeInvoice />} />
-          <Route path="payout" element={<Payout />} />
-          <Route path="my-profile" element={<Profile />} />
-          <Route path="services" element={<ManageServices />} />
-        </Route>
         <Route path="*" element={<NotFound />} />
       </Routes>
     </>
