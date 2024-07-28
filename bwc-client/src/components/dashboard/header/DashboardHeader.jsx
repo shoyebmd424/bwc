@@ -3,11 +3,11 @@ import toggleStore from "@/store/toggleStore";
 
 import { Link } from "react-router-dom";
 import { useLocation } from "react-router-dom";
+import logo from "../../../asserts/home/Logo.png";
 
 export default function DashboardHeader() {
   const toggle = toggleStore((state) => state.dashboardSlidebarToggleHandler);
   const { pathname } = useLocation();
-
   return (
     <>
       <header className="header-nav nav-innerpage-style menu-home4 dashboard_header main-menu">
@@ -18,7 +18,7 @@ export default function DashboardHeader() {
                 <div className="text-center text-lg-start d-flex align-items-center">
                   <div className="dashboard_header_logo position-relative me-2 me-xl-5">
                     <Link to="/" className="logo">
-                      <img src="/images/header-logo-dark.svg" alt="logo" />
+                      <img src={logo} alt="logo" />
                     </Link>
                   </div>
                   <div className="fz20 ml90">

@@ -1,3 +1,8 @@
+import img1 from "../asserts/home/p1.jpeg";
+import img2 from "../asserts/home/p2.jpeg";
+import img3 from "../asserts/home/p3.jpeg";
+import img4 from "../asserts/home/p4.jpeg";
+import img5 from "../asserts/home/p5.jpeg";
 export const browserCategory = [
   {
     id: 1,
@@ -5,7 +10,7 @@ export const browserCategory = [
     skill: 1.853,
     title: "Development & IT",
     brif: "Software Engineer, Web / Mobile Developer & More",
-    img: "/images/listings/category-1.jpg",
+    img: img1,
   },
   {
     id: 2,
@@ -13,7 +18,7 @@ export const browserCategory = [
     skill: 1.853,
     title: "Design & Creative",
     brif: "Software Engineer, Web / Mobile Developer & More",
-    img: "/images/listings/category-2.jpg",
+    img: img2,
   },
   {
     id: 3,
@@ -21,7 +26,7 @@ export const browserCategory = [
     skill: 1.853,
     title: "Digital Marketing",
     brif: "Software Engineer, Web / Mobile Developer & More",
-    img: "/images/listings/category-3.jpg",
+    img: img3,
   },
   {
     id: 4,
@@ -29,7 +34,7 @@ export const browserCategory = [
     skill: 1.853,
     title: "Writing & Translation",
     brif: "Software Engineer, Web / Mobile Developer & More",
-    img: "/images/listings/category-4.jpg",
+    img: img4,
   },
   {
     id: 5,
@@ -37,7 +42,7 @@ export const browserCategory = [
     skill: 1.853,
     title: "Musics & Audio",
     brif: "Software Engineer, Web / Mobile Developer & More",
-    img: "/images/listings/category-5.jpg",
+    img: img5,
   },
   {
     id: 6,
@@ -45,7 +50,7 @@ export const browserCategory = [
     skill: 1.853,
     title: "Video & Animation",
     brif: "Software Engineer, Web / Mobile Developer & More",
-    img: "/images/listings/category-1.jpg",
+    img: img4,
   },
   {
     id: 7,
@@ -132,28 +137,28 @@ export const price1 = [
     id: 1,
     monthlyPrice: 29,
     yearlyPrice: 39,
-    plan: "Basic Plan",
+    plan: " Quotations",
     isActive: false,
   },
   {
     id: 2,
     monthlyPrice: 49,
     yearlyPrice: 59,
-    plan: "Standard Plan",
+    plan: " Invoicing",
     isActive: true,
   },
   {
     id: 3,
     monthlyPrice: 89,
     yearlyPrice: 99,
-    plan: "Extended Plan",
+    plan: "Payment Tracking",
     isActive: false,
   },
   {
     id: 4,
     monthlyPrice: 129,
     yearlyPrice: 139,
-    plan: "Enterprise Plan",
+    plan: "Scheduling",
     isActive: false,
   },
 ];

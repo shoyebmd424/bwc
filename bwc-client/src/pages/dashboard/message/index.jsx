@@ -1,4 +1,4 @@
-import DashboardLayout from "@/components/dashboard/DashboardLayout";
+import DashboardLayout from "@/consumer/DashboardLayout";
 import MessageInfo from "@/components/dashboard/section/MessageInfo";
 
 import MobileNavigation2 from "@/components/header/MobileNavigation2";

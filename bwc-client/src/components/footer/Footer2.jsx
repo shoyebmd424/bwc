@@ -15,10 +15,10 @@ export default function Footer2() {
           <div className="row">
             <div className="col-sm-6 col-lg-3">
               <div className="link-style1 light-style at-home8 mb-4 mb-sm-5">
-                <h5 className="mb15">Building Work</h5>
+                <h5 className="mb15 text-white">Building Work</h5>
                 <div className="link-list">
                   {about.map((item, i) => (
-                    <Link key={i} to={item.path}>
+                    <Link className="text-white" key={i} to={item.path}>
                       {item.name}
                     </Link>
                   ))}
@@ -27,11 +27,13 @@ export default function Footer2() {
             </div>
             <div className="col-sm-6 col-lg-3">
               <div className="link-style1 light-style at-home8 mb-4 mb-sm-5">
-                <h5 className="mb15">Professional Services</h5>
+                <h5 className="mb15 text-white">Professional Services</h5>
                 <ul className="ps-0">
                   {category.map((item, i) => (
                     <li key={i}>
-                      <Link to={item.path}>{item.name}</Link>
+                      <Link className="text-white" to={item.path}>
+                        {item.name}
+                      </Link>
                     </li>
                   ))}
                 </ul>
@@ -39,21 +41,25 @@ export default function Footer2() {
             </div>
             <div className="col-sm-6 col-lg-3 row">
               <div className="link-style1 col-6 light-style at-home8 mb-4 mb-sm-5">
-                <h5 className="mb15">Legal & Support</h5>
+                <h5 className="mb15 text-white">Legal & Support</h5>
                 <ul className="ps-0">
                   {support.map((item, i) => (
                     <li key={i}>
-                      <Link to={item.path}>{item.name}</Link>
+                      <Link className="text-white" to={item.path}>
+                        {item.name}
+                      </Link>
                     </li>
                   ))}
                 </ul>
               </div>
               <div className="link-style1 col-6 light-style at-home8 mb-4 mb-sm-5">
-                <h5 className="mb15">Other</h5>
+                <h5 className="mb15 text-white">Other</h5>
                 <ul className="ps-0">
                   {other.map((item, i) => (
                     <li key={i}>
-                      <Link to={item.path}>{item.name}</Link>
+                      <Link className="text-white" to={item.path}>
+                        {item.name}
+                      </Link>
                     </li>
                   ))}
                 </ul>
@@ -63,28 +69,32 @@ export default function Footer2() {
               <div className="footer-widget">
                 <div className="footer-widget mb-4 mb-sm-5">
                   <div className="mailchimp-widget">
-                    <h5 className="title mb20">Subscribe</h5>
+                    <h5 className="title mb20 text-white">Subscribe</h5>
                     <div className="mailchimp-style1 at-home4">
                       <input
                         type="email"
-                        className="form-control"
+                        className="form-control subscribe"
                         placeholder="Your email address"
                       />
-                      <button type="submit">Send</button>
+                      <button type="submit" className="text-white">
+                        Send
+                      </button>
                     </div>
                   </div>
                 </div>
                 <div className="app-widget mb-4 mb-sm-5">
-                  <h5 className="title mb20">Apps</h5>
+                  <h5 className="title mb20 text-white">Apps</h5>
                   <div className="row mb-4 mb-lg-5">
                     <div className="col-lg-12">
                       <a className="app-list light-style d-flex align-items-center mb10">
-                        <i className="fab fa-apple fz17 mr15" />
-                        <h6 className="app-title fz15 fw400 mb-0">iOS App</h6>
+                        <i className="fab fa-apple fz17 text-white mr15" />
+                        <h6 className="app-title fz15 fw400 mb-0 text-white">
+                          iOS App
+                        </h6>
                       </a>
                       <a className="app-list light-style d-flex align-items-center">
-                        <i className="fab fa-google-play fz15 mr15" />
-                        <h6 className="app-title fz15 fw400 mb-0">
+                        <i className="fab fa-google-play text-white fz15 mr15" />
+                        <h6 className="app-title fz15 fw400 mb-0 text-white">
                           Android App
                         </h6>
                       </a>
@@ -99,9 +109,10 @@ export default function Footer2() {
           <div className="row">
             <div className="col-md-6">
               <div className="text-center text-lg-start">
-                <p className="copyright-text mb-2 mb-md0 text-dark-light ff-heading">
+                <p className="copyright-text mb-2 text-white mb-md0 text-dark-light ff-heading">
                   {new Date().getFullYear()}
                   <a
+                    className="text-white"
                     href="https://themeforest.net/user/ib-themes/portfolio"
                     target="_blank"
                     rel="noreferrer"

@@ -302,3 +302,7 @@ span[class*=" flaticon-"]:before {
 .flaticon-home-1:before {
   content: "\f15c";
 }
+
+.flaticon-clock:before {
+  content: "\f15b";
+}

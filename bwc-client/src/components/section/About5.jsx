@@ -51,7 +51,7 @@ export default function About5() {
                     </li>
                   </ul>
                 </div>
-                <Link to="/freelancer-single" className="ud-btn btn-thm-border">
+                <Link to="/tradespeople" className="ud-btn btn-thm-border">
                   Find Talent
                   <i className="fal fa-arrow-right-long" />
                 </Link>

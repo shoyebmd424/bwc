@@ -1,5 +1,4 @@
 import { Link } from "react-router-dom";
-import FooterSocial from "./FooterSocial";
 import FooterSocial2 from "./FooterSocial2";
 
 const links = [
@@ -15,7 +14,11 @@ export default function FooterHeader2() {
         <div className="col-md-7">
           <div className="d-block text-center text-md-start justify-content-center justify-content-md-start d-md-flex align-items-center mb-3 mb-md-0">
             {links.map((item, i) => (
-              <Link key={i} className="fz17 fw500 mr15-md mr30 " to={item.path}>
+              <Link
+                key={i}
+                className="fz17 fw500 mr15-md text-white mr30 "
+                to={item.path}
+              >
                 {item.name}
               </Link>
             ))}

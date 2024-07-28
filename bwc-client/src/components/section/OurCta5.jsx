@@ -1,4 +1,5 @@
 import { Link } from "react-router-dom";
+import img from "../../asserts/home/findBussiness.jpeg";
 
 export default function OurCta5() {
   return (
@@ -9,8 +10,11 @@ export default function OurCta5() {
             <div className="col-md-7 col-xl-5 wow fadeInLeft">
               <div className="cta-style3 pl80 pl0-lg">
                 <h2 className="cta-title">
-                  With talented freelancers do more work.
+                  Find the right jobs to get your business growing.
                 </h2>
+                <p>
+                  Advertise your services and receive leads and secure more work
+                </p>
                 <div className="d-sm-flex align-items-center mt30">
                   <Link
                     to="/project-1"
@@ -33,7 +37,8 @@ export default function OurCta5() {
               <div className="cta-img me-4">
                 <img
                   className="w-100 h-auto"
-                  src="/images/about/about-6.png"
+                  style={{ aspectRatio: "1" }}
+                  src={img}
                   alt="about"
                 />
               </div>

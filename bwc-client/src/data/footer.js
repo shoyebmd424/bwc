@@ -24,7 +24,7 @@ export const support = [
 ];
 export const other = [
   { id: 1, name: "Blogs", path: "/blog" },
-  { id: 2, name: "Shop", path: "/shop" },
+  { id: 2, name: "Shop", path: "/shop-list" },
   { id: 3, name: "Privacy Policy", path: "/privacy" },
   { id: 4, name: "Terms of Service", path: "/terms" },
 ];
@@ -34,17 +34,11 @@ export const lan = ["English", "Frenc", "Italian", "Spanish", "Turkey"];
 
 export const footer = [
   "/dashboard",
-  "/proposal",
-  "/saved",
-  "/message",
-  "/reviews",
-  "/invoice",
-  "/payouts",
-  "/statements",
-  "/manage-services",
-  "/manage-jobs",
-  "/manage-projects",
-  "/my-profile",
-  "/add-services",
-  "/create-projects",
+  "/consumer",
+  "/consumer/schedule",
+  "/consumer/post-a-job",
+  "/consumer/job",
+  "/consumer/suppiers",
+  "/consumer/home-inspiration",
+  "/consumer/my-profile",
 ];

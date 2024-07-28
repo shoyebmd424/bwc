@@ -1,7 +1,11 @@
+import img1 from "../asserts/home/i1.jpeg";
+import img2 from "../asserts/home/i2.jpeg";
+import img3 from "../asserts/home/i3.jpeg";
+import img4 from "../asserts/home/i4.jpeg";
 export const product1 = [
   {
     id: 1,
-    img: "/images/listings/g-1.jpg",
+    img: img1,
     img2: "/images/listings/g-17.jpg",
     category: "Web & App Design",
     title: "I will design modern websites in figma or adobe xd",
@@ -25,7 +29,7 @@ export const product1 = [
   },
   {
     id: 2,
-    img: "/images/listings/g-2.jpg",
+    img: img2,
     img2: "/images/listings/g-18.jpg",
     category: "Art & Illustration",
     title: "I will create modern flat design illustration",
@@ -54,7 +58,7 @@ export const product1 = [
   },
   {
     id: 3,
-    img: "/images/listings/g-3.jpg",
+    img: img3,
     img2: "/images/listings/g-19.jpg",
     category: "Design & Creative",
     title:
@@ -79,7 +83,7 @@ export const product1 = [
   },
   {
     id: 4,
-    img: "/images/listings/g-4.jpg",
+    img: img4,
     img2: "/images/listings/g-20.jpg",
     category: "Web & App Design",
     title: "I will do mobile app development for ios and android",

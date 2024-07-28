@@ -1,0 +1,94 @@
+@import url("../become-seller/BecomeDashbord/BecomDash.css");
+.post-a-job{
+    padding: 10px 20px 20px 100px;
+}
+.post-a-job .service-details-left,.post-a-job .service-details-right{
+    max-height: 987px;
+    min-height: 70vh;
+    box-shadow: 0 0 20px #e7e5e5af;
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 20px;
+}
+.right-service{
+    box-shadow: 0 0 20px #e7e5e5af;
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 20px;
+}
+.post-a-job .form-field .form-control{
+height: auto !important;
+}
+.post-a-job .service-details-left .work-img {
+    max-height: 217px;
+    min-height: 100px;
+    border-radius: 10px;
+    overflow: hidden;
+}
+.post-a-job .service-details-left .work-interface .select-pic{
+max-width: 143px;
+min-width: 120px;
+aspect-ratio: 1/1;
+}
+.select-pic img{
+    border-radius: 5px;
+}
+.post-a-job .service-details-left  .work-interface .active h3,.post-a-job .service-details-left  .work-interface .active p{
+    color: #5BBB7B;
+}
+.post-a-job .service-details-left .selected{
+    max-height: 200px;
+    overflow-y:scroll ;
+}
+.post-a-job .service-details-left .selected::-webkit-scrollbar {
+    width: 5px; 
+}
+
+.post-a-job .service-details-left .selected::-webkit-scrollbar-thumb {
+    background-color: #888;
+    border-radius: 10px; 
+}
+.post-a-job .service-details-left .selectRemovebtns .btn-thm{
+    border-radius: 20px;
+    padding: 0px 20px;
+    margin-left: auto;
+
+}
+
+/*  description */
+.description-pic .pic{
+width: 70px;
+aspect-ratio: 1/1;
+}
+.description-pic .pic img{
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+}
+.description-pic .select-field{
+  border: 2px solid #DDDDDD;   
+  border-radius: 10px;
+  padding: 10px;
+  cursor: pointer;
+}
+.description-pic .select-field .empty{
+    height: 20px;
+    aspect-ratio: 1/1;
+    border-radius: 50%;
+    border: 2px solid #DDDDDD;
+    margin: auto 0;
+}
+.description-pic .select-field.active  .empty{
+    background: #5BBB7B;
+}
+.description-pic .select-field.active{
+    border: 2px solid #5BBB7B;
+    color: #5BBB7B;
+}
+.summary-img{
+    height: 120px;
+    aspect-ratio: 1/1;
+}
+.summary-img img{
+    border-radius: 5px;
+}

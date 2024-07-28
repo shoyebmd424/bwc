@@ -6,7 +6,10 @@ export default function BrowserCategoryCard2({ data }) {
       {" "}
       <Link to="/project-1">
         <div className="feature-style1 mb30 bdrs16">
-          <div className="feature-img bdrs16 overflow-hidden">
+          <div
+            className="feature-img bdrs16 overflow-hidden"
+            style={{ aspectRatio: "4/3" }}
+          >
             <img
               className="w-100 h-100 object-fit-cover"
               src={data.img}

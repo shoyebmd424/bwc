@@ -8,7 +8,7 @@ import { payout } from "@/data/dashboard";
 export default function PayoutInfo() {
   return (
     <>
-      <div className="dashboard__content hover-bgc-color">
+      <div className="dashboard__content hover-bgc-color mt-0 pt-0">
         <div className="row pb40">
           <div className="col-lg-12">
             <DashboardNavigation />

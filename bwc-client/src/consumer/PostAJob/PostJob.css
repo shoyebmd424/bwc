@@ -1,0 +1,55 @@
+:root{
+    --light-red:#FFEDE8;
+    --green:  #5bbb7b;
+
+}
+.bg-light-danger{
+    background: var(--light-red);
+    cursor: pointer;
+}
+.jop-trade-pic,.prf{
+    width: 50px;
+    aspect-ratio: 1/1;
+}
+
+.cmpt{
+    border-bottom: 2px solid #DDDDDD;
+    font-family: DM Sans;
+font-size: 17px;
+font-weight: 500;
+line-height: 28px;
+text-align: left;
+color:gray ;
+
+}
+.cmpt li{
+    cursor: pointer;
+    padding:0 20px;
+}
+.cmpt li.active{
+    border-bottom: 2px solid black;
+    color: black;
+}
+.prtfy-pic{
+    height: 200px;
+    aspect-ratio: 1/1;
+    padding: 20px;
+}
+
+.bid-request-btn{
+    background: var(--green);
+    border: none;
+    padding:15px;
+    color: white;
+    font-weight: 600;
+    border-radius: 5px 5px 0px 0px;
+    margin: 0 !important;
+}
+.requests{
+    justify-content:space-between;
+}
+.requests .bid-requests{
+   max-height: 33%;
+    overflow-y: scroll;
+    scrollbar-width: none;
+}

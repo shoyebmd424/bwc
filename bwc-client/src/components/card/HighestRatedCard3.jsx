@@ -1,5 +1,4 @@
 import { Link } from "react-router-dom";
-import React from "react";
 
 export default function HeighestRetedCard3({ data }) {
   return (
@@ -43,12 +42,12 @@ export default function HeighestRetedCard3({ data }) {
             <a className="meta fw500 text-start">
               Job Success
               <br />
-              <span className="fz14 fw400">%{data.jobSuccess}</span>
+              <span className="fz14 fw400">%{data?.jobSuccess}</span>
             </a>
           </div>
           <div className="d-grid mt15">
             <Link
-              to={`/freelancer-single/${data.id}`}
+              to={`/tradespeople/single/${data.id}`}
               className="ud-btn btn-white2 double-border bdrs60"
             >
               View Profile

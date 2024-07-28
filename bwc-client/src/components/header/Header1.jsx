@@ -1,10 +1,10 @@
 import { Link } from "react-router-dom";
-import Mega from "./Mega";
 
 import Navigation from "./Navigation";
 import useStickyMenu from "@/hook/useStickyMenu";
 import MobileNavigation1 from "./MobileNavigation1";
 import logo from "../../asserts/home/Logo-white.png";
+import logo2 from "../../asserts/home/Logo.png";
 
 export default function Header1() {
   const sticky = useStickyMenu(50);
@@ -30,12 +30,12 @@ export default function Header1() {
                       />
                     </Link>
                     <Link className="header-logo logo2" to="/">
-                      <img src="/images/header-logo2.svg" alt="Header Logo" />
+                      <img src={logo2} alt="Header Logo" />
                     </Link>
                   </div>
-                  <div className="home1_style">
+                  {/* <div className="home1_style">
                     <Mega />
-                  </div>
+                  </div> */}
                   <Navigation />
                 </div>
               </div>

@@ -22,9 +22,9 @@ export default function BrowserCategory2() {
           >
             <div className="col-lg-9">
               <div className="main-title2">
-                <h2 className="title">Browse talent by category</h2>
+                <h2 className="title">Our Popular Categories</h2>
                 <p className="paragraph">
-                  Aliquam lacinia diam quis lacus euismod
+                  Get some Inspirations from 1800+ skills
                 </p>
               </div>
             </div>

@@ -5,7 +5,7 @@ export default function FooterSocial2() {
     <>
       <div className="social-widget text-center text-md-end">
         <div className="social-style1 light-style2">
-          <Link className="me-2 fw500 fz17" to="/">
+          <Link className="me-2 fw500 fz17 text-white" to="/">
             Follow us
           </Link>
           <a>

@@ -1,5 +1,3 @@
-import React from "react";
-
 export default function CategoryList14() {
   return (
     <section className="categories_list_section overflow-hidden">

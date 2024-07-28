@@ -1,18 +1,15 @@
+import img from "../../asserts/home/apk.png";
 export default function OurCta2() {
   return (
     <>
       <section className="cta-home8 pt90 pt60-md pb90 pb60-md cta-home5-style ml30 ml0-lg">
         <div className="container">
-          <div className="home5-floating-img-1 d-none d-lg-block">
-            <img
-              src="/images/about/about-8.png"
-              alt="about 8"
-              className="object-fit-contain"
-            />
-          </div>
+          {/* <div className="home5-floating-img-1 d-none d-lg-block">
+            <img src={img} alt="about 8" className="object-fit-contain" />
+          </div> */}
           <div className="row">
-            <div className="col-lg-5 col-xl-6 position-relative wow zoomIn d-none d-xl-block">
-              <div className="cta-img-home8">
+            <div className="col-lg-5 col-xl-5 position-relative wow zoomIn d-none d-xl-block">
+              <div className="cta-img-home8 " style={{ top: "0px" }}>
                 <img
                   className="w-100"
                   src="/images/about/mobile-app.png"
@@ -20,7 +17,7 @@ export default function OurCta2() {
                 />
               </div>
             </div>
-            <div className="col-lg-7 col-xl-4 offset-xl-1">
+            <div className="col-lg-7 col-xl-4">
               <div className="cta-style5 wow fadeInUp">
                 <span className="app-tag mb25">Start today</span>
                 <h2 className="cta-title mb15">Download the App</h2>
@@ -64,6 +61,9 @@ export default function OurCta2() {
                   </div>
                 </div>
               </div>
+            </div>
+            <div className="col-3 d-none d-lg-block">
+              <img src={img} alt="about 8" className="w-100 h-100" />
             </div>
           </div>
         </div>

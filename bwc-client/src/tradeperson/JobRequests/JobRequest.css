@@ -1,0 +1,16 @@
+.job-request-list-one .active h4,.job-request-list-one .active div small{
+    color: #5bbb7b;
+}
+
+.request-head{
+    border-bottom: 2px solid lightgray;
+}
+.request-head div{
+    padding: 5px 20px;
+    font-weight: 600;
+    cursor: pointer;
+}
+.request-head div.active{
+    border-bottom: 2px solid black;
+    color: black;
+}

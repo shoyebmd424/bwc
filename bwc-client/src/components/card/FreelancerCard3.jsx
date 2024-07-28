@@ -53,7 +53,7 @@ export default function FreelancerCard3({ data }) {
             </div>
             <div className="d-grid mt15">
               <Link
-                to={`/freelancer-single/${data.id}`}
+                to={`/tradespeople/single/${data.id}`}
                 className="ud-btn btn-light-thm"
               >
                 View Profile

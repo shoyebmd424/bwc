@@ -1,5 +1,4 @@
-import { Link } from "react-router-dom";
-
+import img from "../../asserts/home/wholeworld.png";
 export default function OurFunFact4() {
   return (
     <>
@@ -9,7 +8,7 @@ export default function OurFunFact4() {
             <div className="col-lg-6">
               <img
                 className="h-100 w-100 mb30-md object-fit-contain"
-                src="/images/about/about-7.png"
+                src={img}
                 alt="about"
               />
             </div>

@@ -1,0 +1,4 @@
+.rbc-calendar .rbc-event.rbc-selected,.rbc-calendar .rbc-row-segment,.rbc-calendar .rbc-event{
+ background: #F1FCFA !important;
+ color: black;
+}

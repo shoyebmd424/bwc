@@ -40,10 +40,10 @@ export default function TrendingServiceCard1({ data }) {
                  } 
                 ${pathname === "/home-8" ? "style5" : ""}`}
       >
-        <div className="list-thumb">
+        <div className="list-thumb" style={{ aspectRatio: "4/3" }}>
           <img
             className="w-100 h-100 object-fit-cover"
-            src={data.img}
+            src={data?.img}
             alt="thumbnail"
           />
           <a
@@ -56,7 +56,7 @@ export default function TrendingServiceCard1({ data }) {
         <div className={`list-content ${pathname === "/home-8" ? "px-0" : ""}`}>
           <p className="list-text body-color fz14 mb-1">{data.category}</p>
           <h5 className="list-title">
-            <Link to={`/service-single/${data.id}`}>
+            <Link to={`/service/single/${data.id}`}>
               {data.title.slice(0, 40) + "..."}
             </Link>
           </h5>

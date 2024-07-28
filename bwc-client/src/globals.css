@@ -11,6 +11,57 @@
 @import "../public/css/dashbord_navitaion.css";
 @import "../public/css/responsive.css";
 
+.bg-light-blue{
+  background: #F1FCFA;
+}
+.bg-light-red{
+  background: #FFEDE8;
+}
+.bg-light-yellow{
+  background: #FFF4DE;
+}
+
+.text-blue{
+  color: #00A3FF;
+}
+.text-yellow{
+  color: #FFA800;
+}
+.text-red{
+  color: #F1416C;
+}
+.light-hover:hover{
+  background: lightgray;
+}
+.subscribe::placeholder{
+color: white !important;
+}
+.subscribe{
+  color: white !important;
+}
+.text-green{
+  color: #5bbb7b;
+}
+.bg-green{
+  background: #5bbb7b ;
+}
+.btn-outline-green{
+  background: transparent;
+  color: #5bbb7b;
+  border: 2px solid #5bbb7b;
+  border-radius: 10px;
+}
+.btn-outline-green:hover{
+  background: #5bbb7b;
+  color: white;
+}
+
+.tt{
+  border-bottom: 1px solid lightgray;
+}
+.ttt{
+  border-bottom: 3px solid lightgray;
+}
 a {
   cursor: pointer;
 }
@@ -100,8 +151,9 @@ a {
   -ms-transition: all 0.3s ease;
   -o-transition: all 0.3s ease;
   transition: all 0.3s ease;
-}
 
+  
+}
 .swiper__pagination-2 .swiper-pagination-bullet {
   background-color: rgba(255, 255, 255, 0.6) !important;
   opacity: 1 !important;

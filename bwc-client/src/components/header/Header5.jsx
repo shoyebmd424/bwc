@@ -1,5 +1,6 @@
 import { Link } from "react-router-dom";
 import Navigation from "./Navigation";
+import logo from "../../asserts/home/Logo.png";
 
 import MobileNavigation4 from "./MobileNavigation4";
 
@@ -17,7 +18,7 @@ export default function Header5() {
                 <div className="d-flex align-items-center justify-content-between">
                   <div className="logos">
                     <Link className="header-logo logo2" to="/">
-                      <img src="/images/header-logo2.svg" alt="Header Logo" />
+                      <img src={logo} alt="Header Logo" />
                     </Link>
                   </div>
                   <Navigation />
@@ -36,13 +37,10 @@ export default function Header5() {
                     <span className="d-none d-xl-inline-block">Become a</span>{" "}
                     Seller
                   </Link>
-                  <Link className="login-info mr10-lg mr30" to="page-login">
+                  <Link className="login-info mr10-lg mr30" to="login">
                     Sign in
                   </Link>
-                  <Link
-                    className="ud-btn btn-thm2 add-joining"
-                    to="page-register"
-                  >
+                  <Link className="ud-btn btn-thm2 add-joining" to="register">
                     Join
                   </Link>
                 </div>

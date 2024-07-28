@@ -3,9 +3,9 @@ import { Doughnut } from "react-chartjs-2";
 
 ChartJS.register(ArcElement, Tooltip, Legend);
 
-export default function DoughnutChart() {
+export default function DoughnutChart({ head, label1, label2 }) {
   const data = {
-    labels: ["Direct 50%", "Referal 25%", "Oragnic 25%"],
+    labels: [label1, label2],
     datasets: [
       {
         label: " ",
@@ -33,7 +33,7 @@ export default function DoughnutChart() {
     <>
       <div className="ps-widget bgc-white bdrs4 p30 mb30 overflow-hidden position-relative">
         <div className="bdrb1 pb15 mb30">
-          <h5 className="title">Traffic</h5>
+          <h5 className="title">{head}</h5>
         </div>
         <Doughnut data={data} options={options} />
       </div>
