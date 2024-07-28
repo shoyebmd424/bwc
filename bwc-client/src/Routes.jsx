@@ -51,64 +51,70 @@ export default function RoutesComponent() {
   return (
     <>
       <Routes>
-        <Route path="/">
+        <Route path="/bwc/">
           <Route index element={<HomePage1 />} />
-          <Route path="/blog" element={<BlogPage2 />} />
-          <Route path="/blog/single" element={<BlogSinglePage1 />} />
-          <Route path="/tradespeople" element={<FreelancerPage2 />} />
+          <Route path="/bwc/blog" element={<BlogPage2 />} />
+          <Route path="/bwc/blog/single" element={<BlogSinglePage1 />} />
+          <Route path="/bwc/tradespeople" element={<FreelancerPage2 />} />
           <Route
-            path="/tradespeople/tradeperson"
+            path="/bwc/tradespeople/tradeperson"
             element={<FreelancerPageSingle1 />}
           />
           <Route
-            path="/tradespeople/single/:id"
+            path="/bwc/tradespeople/single/:id"
             element={<FreelancerPageSingle1 />}
           />
-          <Route path="/service" element={<ServicePage3 />} />
-          <Route path="service/single" element={<ServicePageSingle11 />} />
-          <Route path="service/single/:id" element={<ServicePageSingle11 />} />
+          <Route path="/bwc/service" element={<ServicePage3 />} />
+          <Route path="/bwc/service/single" element={<ServicePageSingle11 />} />
+          <Route
+            path="/bwc/service/single/:id"
+            element={<ServicePageSingle11 />}
+          />
 
-          <Route path="home-inspiration" element={<ServicePage4 />} />
+          <Route path="/bwc/home-inspiration" element={<ServicePage4 />} />
           <Route
-            path="home-inspiration/single"
+            path="/bwc/home-inspiration/single"
             element={<ServicePageSingle2 />}
           />
-          <Route path="help-support" element={<HelpPage />} />
-          <Route path="faq" element={<FaqPage />} />
-          <Route path="terms" element={<TermsPage />} />
-          <Route path="post-a-job" element={<PostAJob />} />
-          <Route path="become-seller" element={<BecameSellerPage />} />
-          <Route path="become-seller/dashboard" element={<BecomeDashboard />} />
+          <Route path="/bwc/help-support" element={<HelpPage />} />
+          <Route path="/bwc/faq" element={<FaqPage />} />
+          <Route path="/bwc/terms" element={<TermsPage />} />
+          <Route path="/bwc/post-a-job" element={<PostAJob />} />
+          <Route path="/bwc/become-seller" element={<BecameSellerPage />} />
           <Route
-            path="become-seller/registeration"
+            path="/bwc/become-seller/dashboard"
+            element={<BecomeDashboard />}
+          />
+          <Route
+            path="/bwc/become-seller/registeration"
             element={<BocomeSellerReg />}
           />
           <Route
-            path="become-seller/registeration/success"
+            path="/bwc/become-seller/registeration/success"
             element={<SuccessMessage />}
           />
-          <Route path="blog-single" element={<BlogSinglePage1 />} />
-          <Route path="blog-single/:id" element={<BlogSinglePage11 />} />
-          <Route path="shop-list" element={<ShopPageList />} />
-          <Route path="shop-cart" element={<ShopPageCart />} />
-          <Route path="shop-checkout" element={<ShopPageCheckout />} />
-          <Route path="shop-order" element={<ShopPageOrder />} />
-          <Route path="shop-single" element={<ShopPageSingle1 />} />
-          <Route path="shop-single/:id" element={<ShopPageSingle11 />} />
-          <Route path="contact" element={<ContactPage />} />
-          <Route path="not-found" element={<NotFound />} />
-          <Route path="faq" element={<FaqPage />} />
-          <Route path="terms" element={<TermsPage />} />
-          <Route path="login" element={<LoginPage />} />
-          <Route path="register" element={<RegisterPage />} />
-          <Route path="ui-component" element={<UIElementsPage />} />
+          <Route path="/bwc/blog-single" element={<BlogSinglePage1 />} />
+          <Route path="/bwc/blog-single/:id" element={<BlogSinglePage11 />} />
+          <Route path="/bwc/shop-list" element={<ShopPageList />} />
+          <Route path="/bwc/shop-cart" element={<ShopPageCart />} />
+          <Route path="/bwc/shop-checkout" element={<ShopPageCheckout />} />
+          <Route path="/bwc/shop-order" element={<ShopPageOrder />} />
+          <Route path="/bwc/shop-single" element={<ShopPageSingle1 />} />
+          <Route path="/bwc/shop-single/:id" element={<ShopPageSingle11 />} />
+          <Route path="/bwc/contact" element={<ContactPage />} />
+          <Route path="/bwc/not-found" element={<NotFound />} />
+          <Route path="/bwc/faq" element={<FaqPage />} />
+          <Route path="/bwc/terms" element={<TermsPage />} />
+          <Route path="/bwc/login" element={<LoginPage />} />
+          <Route path="/bwc/register" element={<RegisterPage />} />
+          <Route path="/bwc/ui-component" element={<UIElementsPage />} />
         </Route>
         {/* end mine */}
 
         {/* consumer */}
         {/* consumers routes */}
 
-        <Route path="consumer" element={<DashboardLayout />}>
+        <Route path="/bwc/consumer" element={<DashboardLayout />}>
           <Route path="" element={<ConsumerDashboard />} />
           <Route path="schedule" element={<Schedule />} />
           <Route path="post-a-job" element={<Job />} />
@@ -121,7 +127,7 @@ export default function RoutesComponent() {
         </Route>
 
         {/* tarderperson */}
-        <Route path="tradeperson" element={<Tradepersonlayout />}>
+        <Route path="/bwc/tradeperson" element={<Tradepersonlayout />}>
           <Route path="" element={<TradeDash />} />
           <Route path="schedule" element={<TradeSchedule />} />
           <Route path="requests" element={<JobRequests />} />
