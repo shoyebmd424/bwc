@@ -1,6 +1,7 @@
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 
 export default function LoginPage() {
+  const navigate = useNavigate();
   return (
     <>
       <section className="our-login">
@@ -60,7 +61,11 @@ export default function LoginPage() {
                   <a className="fz14 ff-heading">Lost your password?</a>
                 </div>
                 <div className="d-grid mb20">
-                  <button className="ud-btn btn-thm" type="button">
+                  <button
+                    onClick={() => navigate("/consumer")}
+                    className="ud-btn btn-thm"
+                    type="button"
+                  >
                     Log In <i className="fal fa-arrow-right-long" />
                   </button>
                 </div>

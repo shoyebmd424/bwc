@@ -1,10 +1,11 @@
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import MetaComponent from "@/components/common/MetaComponent";
 const metadata = {
   title: "Freeio - Freelance Marketplace ReactJs Template | Register",
 };
 export default function RegisterPage() {
   <MetaComponent meta={metadata} />;
+  const navigate = useNavigate();
   return (
     <>
       <section className="our-register">
@@ -75,6 +76,7 @@ export default function RegisterPage() {
                 </div>
                 <div className="d-grid mb20">
                   <button
+                    onClick={() => navigate("/tradeperson")}
                     className="ud-btn btn-thm default-box-shadow2"
                     type="button"
                   >
