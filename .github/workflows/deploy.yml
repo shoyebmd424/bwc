@@ -28,6 +28,13 @@ jobs:
           cd bwc-client
           npm run build
 
+      - name: Configure Git
+        run: |
+          git config --global user.email shoyebmd424@gmail.com
+          git config --global user.name shoyebmd424
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
       - name: Deploy to GitHub Pages
         run: |
           cd bwc-client
