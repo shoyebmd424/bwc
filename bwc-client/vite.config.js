@@ -21,5 +21,5 @@ export default defineConfig({
       "@": path.resolve(__dirname, "./src"),
     },
   },
-  base: "/bwc-client/", // Replace 'bwc' with your repository name
+  base: "/bwc/", // Replace 'bwc' with your repository name
 });
